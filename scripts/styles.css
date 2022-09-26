@@ -1,0 +1,660 @@
+/* Styles */
+/* The background and story font */
+body {
+    background-color: black;
+    font-size: 1.5em;
+    color: white;
+    user-select: none;
+}
+
+/* For image messages */
+#story-image-message {
+    display: none;
+    font-size: 0.75em;
+    margin: 1.5em auto 0 auto;
+    padding: .5em 1em;
+    /*color: #0033cc;*/
+    font-weight: bold;
+    background-color: #707070;
+    border-radius: 50px;
+}
+
+#story-image-message-flash {
+    font-size: 0.75em;
+    margin: 1.5em auto 0 auto;
+    padding: .5em 1em;
+    /*color: #0033cc;*/
+    font-weight: bold;
+    background-color: #585858;
+    /*background-color: #989898;*/
+    border-radius: 50px;
+}
+
+/* For story text */
+#story {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* For the prev and next arrows */
+.pointer {
+    font-size: 2em;
+}
+
+.pointer:focus, .pointer:hover, .pointer:active {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Menu styles */
+/* Styles for the main menu */
+#menu, #house-menu, #town-menu  {
+    margin-top: 0;
+    display: none;
+    list-style-type: none;
+    padding: 5px;
+    width: 275px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #00002d;
+    margin-left: 0;
+}
+
+/* Blue theme */
+#menu li, #town-menu li {
+    cursor:pointer;
+    margin: .5em;
+    padding: .5em 1em;
+    text-align: center;
+    font-weight:bold;
+    border-radius: 10px;
+    color:#e6ecff; /* 95% */
+    background: #0033cc; /* 40% */
+    border-left:10px solid #668cff; /* 70% */
+    border-right: 10px solid #668cff; /* 70% */
+    border-top: 10px solid #3366ff; /* 60% */
+    border-bottom:10px solid #001a66; /* 20% */
+}
+
+#menu li {
+    text-transform: uppercase;
+}
+
+/* Orange highlight theme */
+#menu li:focus, #menu li:hover, #menu li:active {
+    color: #fff5e6; /* 95% */
+    background: #cc7a00; /* 40% */
+    border-left: 10px solid #ffc266; /* 70% */
+    border-right: 10px solid #ffc266; /* 70% */
+    border-top: 10px solid #ffad33; /* 60% */
+    border-bottom: 10px solid #663d00; /* 20% */
+}
+
+/* For flashing the main menu */
+#menu-flash {
+    margin-top: 0;
+    list-style-type: none;
+    padding: 5px;
+    width: 275px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #00002d;
+}
+
+
+/* Gray display flash theme */
+#menu-flash li {
+    cursor:pointer;
+    margin: .5em;
+    padding: .5em 1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight:bold;
+    border-radius: 10px;
+    color: #f2f2f2; /* 95% */
+    background: #999999; /* 60% */
+    border-left:10px solid #cccccc; /* 80% */
+    border-right: 10px solid #cccccc; /* 80% */
+    border-top: 10px solid #b3b3b3; /* 70% */
+    border-bottom:10px solid #666666; /* 40%% */
+}
+
+#town-menu li:focus, #town-menu li:hover, #town-menu li:active {
+    color:#b3ffb3; /* 85% */
+    background: #009900; /* 30% */
+    border-left:10px solid #66ff66; /* 70% */
+    border-right: 10px solid #66ff66; /* 70% */
+    border-top: 10px solid #00cc00; /* 40% */
+    border-bottom:10px solid #003300; /* 10% */
+}
+
+
+/* Styles for the house menu
+/* Blue theme */
+#house-menu li {
+    cursor: pointer;
+    margin: .5em;
+    padding: .25em .5em;
+    text-align: center;
+    font-weight:bold;
+    border-radius: 10px;
+    color:#e6ecff; /* 95% */
+    background: #0033cc; /* 40% */
+    border-left:10px solid #668cff; /* 70% */
+    border-right: 10px solid #668cff; /* 70% */
+    border-top: 10px solid #3366ff; /* 60% */
+    border-bottom:10px solid #001a66; /* 20% */
+}
+
+/* Yellow highlight theme */
+#house-menu li:focus, #house-menu li:hover, #house-menu li:active {
+    color: #0000ff;
+    background-color: #cccc00;
+    border-left:10px solid #ffff66;
+    border-right: 10px solid #ffff66;
+    border-top: 10px solid #ffff33;
+    border-bottom:10px solid #666600;
+}
+
+/* A dark green theme for the Camp Amatol menu
+color:#ebfaeb;
+background: #145214;
+border-left:10px solid #29a329;
+border-right: 10px solid #29a329;
+border-top: 10px solid #1f7a1f;
+*/
+
+/* Styles for the sports menu */
+#sports-menu {
+    grid-area: story;
+    list-style-type: none;
+    display: none;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+/* Red theme */
+#sports-menu li {
+    cursor: pointer;
+    margin: .5em;
+    padding: 1em;
+    text-align: center;
+    border-radius: 50px;
+    color:#ffe6e6; /* 95% */
+    background: #cc0000; /* 40% */
+    border-left:10px solid #ff6666; /* 70% */
+    border-right: 10px solid #ff6666; /* 70% */
+    border-top: 10px solid #ff3333; /* 60% */
+    border-bottom:10px solid #660000; /* 20% */
+}
+
+/* Gold highlight theme */
+#sports-menu li:active, #sports-menu li:hover, #sports-menu li:focus {
+    color: #fff5e6; /* 95% */
+    background: #cc7a00; /* 40% */
+    border-left: 10px solid #ffc266; /* 70% */
+    border-right: 10px solid #ffc266; /* 70% */
+    border-top: 10px solid #ffad33; /* 60% */
+    border-bottom: 10px solid #663d00; /* 20% */
+}
+
+/* Sports menu wager screen */
+#wager, #team {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+#wager {
+    margin: 0 auto;
+    font-family: "Courier New", monospace;
+}
+
+#team {
+    margin-bottom: 1.5em;
+}
+
+#wager-div {
+    display: none;
+}
+
+#wager li {
+    margin: .5em auto;
+}
+
+#wager-paragraph {
+    margin-bottom: 0;
+}
+
+
+/* For the select dropdown boxes for selecting points */
+.dropdown {
+    width: auto;
+    height: auto;
+    font-size: 1.25em;
+}
+
+.text-field {
+    height: 1.25em;
+    font-size: 1.25em;
+    display: none;
+}
+
+/* Styles for the newspaper menu */
+#newspaper-menu {
+    grid-area: story;
+    display: none;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    padding: 0;
+}
+
+/* Golden theme */
+#newspaper-menu li {
+    cursor: pointer;
+    margin: .5em;
+    padding: .5em 1em;
+    text-align: center;
+    border-radius: 50px;
+    color: #ffeecc; /* 90% */
+    background: #996600; /* 30% */
+    border-left:10px solid #cc8800; /* 40% */
+    border-right: 10px solid #cc8800; /* 40% */
+    border-top: 10px solid #664400; /* 20% */
+    border-bottom:10px solid #332200; /* 10% */
+}
+
+/* Red highlight theme */
+#newspaper-menu li:focus, #newspaper-menu li:hover, #newspaper-menu li:active {
+    font-weight:bold;
+    color:#ffe6e6; /* 95% */
+    background: #cc0000; /* 40% */
+    border-left:10px solid #ff6666; /* 70% */
+    border-right: 10px solid #ff6666; /* 70% */
+    border-top: 10px solid #ff3333; /* 60% */
+    border-bottom:10px solid #660000; /* 20% */
+}
+
+/* Italicize the name of the newspaper  */
+.newspaper-title {
+    font-style: italic;
+}
+
+/* Underline and enlarge article summaries */
+.article-summary {
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+
+/* Styles for the points display */
+#right-display {
+    list-style-type: none;
+    display: none;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #00003d;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#right-display li {
+    margin: .5em;
+    padding: .5em 1em;
+    text-align: center;
+    font-weight:bold;
+    border-radius: 10px;
+}
+
+/* HP is displayed with a blue theme */
+#hp {
+    color:#e6ecff; /* 95% */
+    background: #0033cc; /* 40% */
+    border-left:10px solid #668cff; /* 70% */
+    border-right: 10px solid #668cff; /* 70% */
+        border-top: 10px solid #3366ff; /* 60% */
+    border-bottom:10px solid #001a66; /* 20% */
+}
+
+#hp-flash {
+    color:#e6ecff; /* 95% */
+    background: #0040ff; /* 50% */
+    border-left:10px solid #99b3ff; /* 80% */
+    border-right: 10px solid #99b3ff; /* 80% */
+    border-top: 10px solid #668cff; /* 70% */
+    border-bottom:10px solid #002699; /* 30% */
+}
+
+.hp-color {
+    color: #0040ff;
+}
+
+#hp-wager {
+    background-color:#e6ecff;
+}
+
+/* WP is displayed with a red theme */
+#wp {
+    color:#ffe6e6; /* 95% */
+    background: #cc0000; /* 40% */
+    border-left:10px solid #ff6666; /* 70% */
+    border-right: 10px solid #ff6666; /* 70% */
+    border-top: 10px solid #ff3333; /* 60% */
+    border-bottom:10px solid #660000; /* 20% */
+}
+
+#wp-flash {
+    color:#ffe6e6; /* 95% */
+    background: #ff0000; /* 50% */
+    border-left:10px solid #ff9999; /* 80% */
+    border-right: 10px solid #ff9999; /* 80% */
+    border-top: 10px solid #ff6666; /* 70% */
+    border-bottom:10px solid #cc0000; /* 40% */
+}
+
+.wp-color {
+    color: red;
+}
+#wp-wager {
+    background-color: #ffe6e6;
+}
+
+/* AP is displayed with a green theme */
+#ap {
+    color:#b3ffb3; /* 85% */
+    background: #009900; /* 30% */
+    border-left:10px solid #66ff66; /* 70% */
+    border-right: 10px solid #66ff66; /* 70% */
+    border-top: 10px solid #00cc00; /* 40% */
+    border-bottom:10px solid #00cc00; /* 10% */
+}
+
+#ap-flash {
+    color: #e6ffe6; /* 95% */
+    background: #00e600; /* 45% */
+    border-left:10px solid #99ff99; /* 80% */
+    border-right: 10px solid #99ff99; /* 80% */
+    border-top: 10px solid #33ff33; /* 60% */
+    border-bottom:10px solid #009900; /* 30% */
+}
+
+.ap-color {
+    color: #009900;
+}
+
+#ap-wager {
+    background-color:#b3ffb3;
+}
+
+/* SP is displayed with a yellow theme */
+#sp {
+    color: lightyellow;
+    background-color: #cccc00;
+    border-left:10px solid #ffff66;
+    border-right: 10px solid #ffff66;
+    border-top: 10px solid #ffff33;
+    border-bottom:10px solid #666600;
+}
+
+.sp-color {
+    color: #cccc00;
+}
+
+#sp-wager {
+    background-color: lightyellow;
+}
+
+#sp-flash {
+    color: lightyellow;
+    background: #ffff00;
+    border-left: 10px solid #ffff99;
+    border-right: 10px solid #ffff99;
+    border-top: 10px solid #ffff66;
+    border-bottom: 10px solid #999900;
+}
+
+
+/* Styles for game choices */
+#links-container {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+/* Displays choices as blue */
+.link {
+    cursor: pointer;
+    display: inline-block;
+    padding: .5em 1em;
+    border-radius: 3.75rem;
+    border: 1px solid #012880;
+    color: lightcyan;
+    background-image: linear-gradient(-180deg, rgb(17, 17, 67) 0%, darkblue 100%);
+    box-shadow: 0 1rem 1.25rem 0 rgba(33, 33, 255, 0.4),
+    0 -0.25rem 1.5rem rgba(45, 45, 207, 1) inset,
+    0 0.75rem 0.5rem rgba(8,8,71, 0.4) inset,
+    0 0.25rem 0.5rem 0 rgba(2, 2, 168, 1) inset;
+}
+
+/* Displays selected choice as white */
+.link:focus, .link:hover, .link:active {
+    color: blue;
+    background-image: linear-gradient(-180deg, ghostwhite 0%, bisque 100%);
+    box-shadow: 0 1rem 1.25rem 0 rgba(255, 255, 255, 0.4),
+    0 -0.25rem 1.5rem rgba(255, 255, 255, 1) inset,
+    0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
+    0 0.25rem 0.5rem 0 rgba(255, 255, 255, 1) inset;
+}
+
+
+
+
+/* Layout */
+/* The main grid */
+#grid {
+    display: grid;
+    grid-template-columns: auto 50px minmax(auto, 50vw) 50px auto;
+    grid-template-rows: 70vh;
+    grid-template-areas:
+            "menu prev story next right-display"
+            "menu . story .  right-display";
+}
+
+/*Placement along the main grid*/
+#menu-div {
+    grid-area: menu;
+    max-width: 275px;
+    display: none;
+    margin-top: 0;
+    user-select: none;
+}
+
+#prev {
+    grid-area: 1 / 1 / 2 / 2;
+    margin: auto;
+    color: black;
+    user-select: none;
+    display: none;
+    width: 50px;
+}
+
+#next {
+    grid-area: 1 / -1 / 2 / -2;
+    margin: auto;
+    user-select: none;
+    display: none;
+    width: 50px;
+}
+
+#story-div {
+    user-select: none;
+    grid-area: story;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 0;
+    max-width: 50vw;
+}
+
+#right-display-div {
+    /*grid-area: right-display;*/
+    margin-left: auto;
+    user-select: none;
+}
+
+
+
+/* The story image */
+#story-image {
+    max-height: 57vh;
+    max-width: 50vw;
+    margin-right: auto;
+    margin-left: auto;
+    border: 15px solid rgb(240, 226, 192);
+    background-color: rgb(240, 226, 192);
+}
+
+#story-image:hover {
+    cursor: pointer;
+}
+
+/* The basketball animation */
+#basketball-gif {
+    display: none;
+    background-color: white;
+    margin-top: 1.5em;
+    margin-right: auto;
+    margin-left: auto;
+    border-top: 10px solid white;
+    border-right: 5px solid white;
+    border-left: 5px solid white;
+}
+
+
+
+/* A modal image viewer to zoom-in on images */
+#popup-grid {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+/* A scrollbar for large images */
+#popup-scroll {
+    margin: auto;
+    max-height: 90vh;
+    max-width: 90vw;
+    overflow: auto;
+}
+
+/* The newspaper display layout */
+#pdf-grid {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+#pdf {
+    margin: auto;
+    overflow: auto;
+    max-height: 90vh;
+}
+
+#pdf-paragraph {
+    text-align: center;
+}
+
+#welcome-screen {
+    height: 5em;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin: .5em auto;
+}
+
+
+#welcome-screen-div {
+    display: table;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    margin: auto;
+
+}
+
+#story-paragraph {
+    display: none;
+}
+
+#scrollbar-container, #balance-space{
+    width: 20px;
+}
+
+#main-contents {
+    flex: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#balance-margins {
+    height: 20px;
+}
+
+#balance-main-contents {
+    display: flex;
+}
+
+.welcome {
+    font-size: 1.5em;
+}
+
+.enlarge {
+    font-size: 2em;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: #0040ff;
+}
+
+.green {
+    color: green;
+}
+
+.orange {
+    color: orange;
+}
+
+.white {
+    color: white;
+}
+

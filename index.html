@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Amatol NJ, Ghost town, History education game, South Jersey history, World War I munitions plant, Amatol game">
+    <meta name="description" content="A history education game about the South Jersey ghost town of Amatol, NJ that was built as a result of America's entry into World War I.">
+    <title>The Amatol Game</title>
+    <link rel="stylesheet" href="scripts/styles.css">
+    <link rel="icon" href="images/amatol.ico" type="image/x-icon">
+</head>
+
+<body>
+<div id="balance-margins"></div>
+<div id="balance-main-contents">
+    <div id="balance-space"></div>
+    <div id="main-contents">
+        <div id="grid">
+            <div id="menu-div">
+                <ul id="menu">
+                    <li id="town">Town</li>
+                    <li id="houses">Houses</li>
+                    <li id="work">Work</li>
+                    <li id="sports">Sports</li>
+                    <li id="camp-amatol">Camp Amatol</li>
+                    <li id="newspaper">Newspaper</li>
+                </ul>
+                <ul id="town-menu"></ul>
+                <ul id="house-menu"></ul>
+            </div>
+            <div id="prev"><span class="pointer">&#10094;</span></div>
+            <div id="story-div">
+                <img id="story-image" src="images/after-amatol.jpg" alt="" style="min-width: 42vw; min-height: 57vh;">
+                <img id="basketball-gif" src="images/basketball.jpg" alt="A basketball hoop">
+                <span id="story-image-message">Click on images to zoom in.</span>
+                <div id="welcome-screen-div" class="center">
+                    <p id="welcome-screen"><span id="text-1"></span><span id="text-2"></span><span id="text-3"></span><span id="text-4"></span><span id="text-5"></span></p>
+                </div>
+                <p id="story-paragraph">Welcome to the Amatol Game
+                    <br><br>Amatol, NJ, was a planned shell-loading munitions plant and workers' village that was built
+                    as a result of America's entry into World War I. Amatol occupied a tract of 6,000 acres in
+                    Atlantic County between East Hammonton and Elwood. What is fascinating about Amatol and other
+                    World War I inspired construction efforts is the rapidity of their construction. In just nine
+                    months, the new town and manufactory at Amatol were completed and reached a population of 7,000.
+                    Today, the Pine Barrens have all but reclaimed the former site of Amatol.
+                    <br><br>
+                    In this game, you will play as Peter James Reilly, who once lived in Amatol and served as a guard
+                    for the munitions plant. Peter was engaged to the Philadelphia actress Agnes Belcher, and their
+                    marriage would be the first wedding that would take place in Amatol.
+                    <br><br>
+                    Peter wants to buy a new house for Agnes and himself to live in. Your goal is to explore the town and
+                    plant collecting points as you do. With these points, you can buy a new house for Peter and Agnes.
+                </p>
+                <div id="wager-div">
+                    <ul id="wager">
+                        <li id="hp-wager-list" class="hp-color"><label>HP: <select id="hp-wager" class="dropdown hp-color" name="hp-wager"></select></label></li>
+                        <li id="wp-wager-list" class="wp-color"><label>WP: <select id="wp-wager" class="dropdown wp-color" name="wp-wager"></select></label></li>
+                        <li id="ap-wager-list" class="ap-color"><label>AP: <select id="ap-wager" class="dropdown ap-color" name="ap-wager"></select></label></li>
+                        <li id="sp-wager-list" class="sp-color"><label>SP: <select id="sp-wager" class="dropdown sp-color" name="sp-wager"></select></label></li>
+                    </ul>
+                    <p id="wager-paragraph"></p>
+                    <ul id="team">
+                        <li id="team1"></li>
+                        <li id="team2"></li>
+                    </ul>
+                </div>
+                <ul id="links-container">
+                    <li id="link1" class="link">&nbsp;&nbsp;Start&nbsp;&nbsp;</li>
+                    <li id="link2" class="link">Credits</li>
+                </ul>
+            </div>
+            <div id="next"><span class="pointer">&#10095;</span></div>
+            <ul id="newspaper-menu"></ul>
+            <ul id="sports-menu"></ul>
+        </div>
+        <div id="popup-grid">
+            <div id="popup-scroll">
+                <img id="popup-image" src="images/after-amatol.jpg" alt="A street view in Amatol">
+            </div>
+        </div>
+        <div id="pdf-grid">
+            <div id="pdf">
+                <img id="pdf-image">
+                <p id="pdf-paragraph"></p>
+            </div>
+        </div>
+    </div>
+    <div id="right-display-div">
+        <ul id="right-display">
+            <li id="hp">HP</li>
+            <li id="wp">WP</li>
+            <li id="ap">AP</li>
+            <li id="sp">SP</li>
+        </ul>
+    </div>
+    <div id="scrollbar-container"></div>
+</div>
+</body>
+<script src="scripts/script.js"></script>
+</html>
